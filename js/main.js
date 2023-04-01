@@ -7,7 +7,7 @@ const navLi = document.querySelectorAll("nav.llc-web-navigation ul li");
 
 	sections.forEach((section) => {
 		const sectionTop = section.offsetTop;
-		if (window.pageYOffset >= sectionTop - 100) {
+		if (window.pageYOffset >= sectionTop - 150) {
 		current = section.getAttribute("id");
 	 }
 	});

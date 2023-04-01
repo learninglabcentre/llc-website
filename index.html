@@ -31,19 +31,21 @@
       </div> -->
       
       <header class="llc-header-navbar light llc-nav-target" role="banner">
-
-        <div class="container">
-          <div class="row align-items-center position-relative">
-            <div class="col-4">
+        <span class="mobileMenuWrapper" style="cursor:pointer">
+          <span onclick="openNav()">&#9776;</span><a class="mobileMenuLogo col-8" href="index.html"><img src = "./images/logo.svg" alt="Learning resource centre" /></a>
+        </span>
+        <div class="container hideMobile">
+          <div class="row align-items-center position-relative fullWidthDiv">
+            <div class="col-4 col-sm-4">
               <div class="site-logo">
                 <a href="index.html"><img src = "./images/logo.svg" alt="Learning resource centre" /></a>
               </div>
             </div>
 
-            <div class="col-8 d-none d-sm-block">
-              <!-- <span class="d-inline-block d-lg-none"><a href="#" class=" llcWebNavbar-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span> -->
-              <nav id ="LlcWebNavbar" class="llc-web-navigation ml-auto d-none d-lg-block" role="navigation">
+            <div class="col-8 d-none d-sm-block col-sm-8">
+              <nav id ="LlcWebNavbar" class="llc-web-navigation ml-auto d-none d-sm-block d-lg-block" role="navigation">
                 <ul class="llcWebNavbar-menu main-menu ml-auto text-right">
+                  <li class="home active"><a href="index.html#home" class="nav-link">Home</a></li>
                   <li class="about"><a href="index.html#about" class="nav-link">About Us</a></li>
                   <li class="tutorials"><a href="tutorials.html" class="nav-link">Tutorials</a></li>
                   <li class="testimonial"><a href="index.html#testimonial" class="nav-link">Testimonials</a></li>
@@ -55,14 +57,31 @@
             
           </div>
         </div>
-
+        <!--mobile menu-->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html#home">Home</a>
+          <a href="index.html#about">About Us</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="index.html#testimonial">Testimonials</a>
+          <a href="index.html#enquiry">Contact Us</a>
+        </div>
+        <!--mobile menu ends here -->
+        <div class="advertBanner">
+          <div class="container">
+            <div class="row">
+              <h1 class="adverBannerTItle">Your first 2 sessions are on US. Pay after your 2 sessions for the remaining ones.</h1>
+            </div>
+          </div>
+        </div>
       </header>
 
       <!--home top section starts here -->
-      <div class="fullSectionWrapper overlay scrollSection"> 
+      <div class="fullSectionWrapper scrollSection llcWrapperImage" id="home"> 
+        
         <div class="container llcHomePage">
           <div class="row align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-sm-5">
               <h1 class="llc-homebanner-title"><strong>LEARN</strong> from <strong>INDUSTRY EXPERTS</strong></h1>
               <!-- form for course search-->
               <div>
@@ -85,15 +104,10 @@
           <div class="heading mb-4">
             <h1 class="blockTitle">About us</h1>
           </div>
-          <p>Our site is dedicated to providing high-quality, easy-to-follow tutorials on a variety of topics. Whether you're a beginner or an expert, our tutorials are designed to help you improve your skills and knowledge in your chosen area.
-
-We cover a wide range of subjects, from programming and web development to graphic design, business sale, recruitment and more. Our tutorials are written by industry experts and designed to be accessible and engaging for learners of all levels.
-
-At Learning Lab Centre, we believe that learning should be fun and rewarding. That's why our tutorials are full of examples, hands-on exercises, practical tips and most importantly it is live video tutorial that you can engage with your mentor.
-
-Our mission is to help you achieve your learning goals, whether that means landing your dream job, starting your own business, or simply pursuing a new hobby. Live video tutorial gives you chance to intreact with your mentor and clear all your doubts.
-
-Thank you for choosing Learning Lab Centre as your online learning partner. We're excited to help you unlock your full potential!</p>
+          <p>Our site is dedicated to providing high-quality, easy-to-follow tutorials on a variety of topics. Whether you are a beginner or an expert, our course structure is designed to help you improve your skills and knowledge in your chosen area. We cover a wide range of subjects, from programming and web development to graphic design, business sale, recruitment and more. Our tutorials are written by industry experts and designed to be accessible and engaging for learners of all levels.</p>
+          <p>At Learning Lab Centre, we believe that learning should be fun and rewarding. That's why our tutors wil teach with full of examples, hands-on exercises, practical tips and most importantly it is live video tutorial so that you can engage with your mentor.</p>
+          <p>Our mission is to help you achieve your learning goals, whether that means landing your dream job, starting your own business, or simply pursuing a new hobby. Live video tutorial gives you chance to intreact with your mentor and clear all your doubts.</p>
+          <p>Thank you for choosing Learning Lab Centre as your online learning partner. We're excited to help you unlock your full potential!</p>
           <div class="row mb-5">
             <div class="col-md-6">
               <div class="heading mb-4">
@@ -106,9 +120,10 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
   
             <div class="col-lg-4 col-md-6 mb-5">
               <div class="llcTeamWrapper h-100 llcTeamMemberImg">
-  
-                <img src="images/person_1.jpg" alt="Image"
-                class="img-fluid">
+                <div class="personImage">
+                  <img src="images/person_1.jpg" alt="Image"
+                  class="img-fluid">
+                </div>
   
                 <div class="llcTeamWrapper-contents">
                   <span class="designation">Founder</span>
@@ -119,9 +134,10 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
               <div class="llcTeamWrapper h-100 llcTeamMemberImg">
-  
-                <img src="images/person_2.jpg" alt="Image"
-                class="img-fluid">
+                <div class="personImage">
+                  <img src="images/person_2.jpg" alt="Image"
+                  class="img-fluid">
+                </div>
   
                 <div class="llcTeamWrapper-contents">
                   <span class="designation">Founder</span>
@@ -146,7 +162,7 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0 col-sm-6">
             <div class="llcTutorTestimonial">
               <h3 class="h5">Excellent Teacher!</h3>
               <div>
@@ -160,7 +176,9 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
+                <div class="testimonialImage">
+                  <img src="images/student-1.jpg" alt="Image">
+                </div>
                 <div class="llcAuthorName">
                   <span class="d-block">Mike Fisher</span>
                   <span>Owner, Ford</span>
@@ -168,7 +186,7 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0 col-sm-6">
             <div class="llcTutorTestimonial">
               <h3 class="h5">Best Video Tutorial!</h3>
               <div>
@@ -182,7 +200,9 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
+                <div class="testimonialImage">
+                  <img src="images/student-2.jpg" alt="Image">
+                </div>
                 <div class="llcAuthorName">
                   <span class="d-block">Jean Stanley</span>
                   <span>Traveler</span>
@@ -190,7 +210,7 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="col-lg-4 mb-4 mb-lg-0 col-sm-6">
             <div class="llcTutorTestimonial">
               <h3 class="h5">Easy to Understand!</h3>
               <div>
@@ -204,7 +224,9 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
+                <div class="testimonialImage">
+                  <img src="images/student-3.jpg" alt="Image">
+                </div>
                 <div class="llcAuthorName">
                   <span class="d-block">Katie Rose</span>
                   <span >Customer</span>
@@ -227,7 +249,7 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6 mb-5" >
+            <div class="col-lg-6 mb-5 col-sm-7" >
               <form action="./mail_handler.php" method="post">
                 <div class="form-group row">
                   <div class="col-md-12 mb-4">
@@ -256,7 +278,7 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
                 </div>
               </form>
             </div>
-            <div class="col-lg-6 ml-auto">
+            <div class="col-lg-6 ml-auto col-sm-5">
               <div class="bg-white p-3 p-md-5">
                 <h3 class="text-black mb-4">Contact Info</h3>
                 <div class="row">
@@ -315,6 +337,16 @@ Thank you for choosing Learning Lab Centre as your online learning partner. We'r
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	  }
+	  
+	  function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	  }
+
+    </script>
   </body>
 
 </html>
