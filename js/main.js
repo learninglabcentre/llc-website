@@ -1,24 +1,6 @@
 jQuery(document).ready(function($) {
 
-const sections = document.querySelectorAll(".scrollSection");
-const navLi = document.querySelectorAll("nav.llc-web-navigation ul li");
-	window.onscroll = () => {
-	var current = "";
 
-	sections.forEach((section) => {
-		const sectionTop = section.offsetTop;
-		if (window.pageYOffset >= sectionTop - 150) {
-		current = section.getAttribute("id");
-	 }
-	});
-
-	navLi.forEach((li) => {
-		li.classList.remove("active");
-		if (li.classList.contains(current)) {
-		li.classList.add("active");
-		}
-	});
-	};
 
 	$('.homeSearch').click(function(event) {
 		event.preventDefault();
@@ -39,4 +21,5 @@ const navLi = document.querySelectorAll("nav.llc-web-navigation ul li");
 		  $('header').removeClass('navbar-fixed-top');
 		}
 	  });
+	  
 });

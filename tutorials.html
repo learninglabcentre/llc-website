@@ -101,7 +101,12 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="ux_ui_heading">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ux_ui_accordion" aria-expanded="true" aria-controls="ux_ui_accordion">
-                      <span class="courseTitle">UX Foundation</span>
+                      <span class="courseTitle">
+                        <span class="courseLogo">
+                          <img src="./images/course-logos/ux_ui_logo.svg" alt="UX UI Foundation" />
+                        </span>
+                        UX Foundation
+                      </span>
                       <span class="text-right instrctorName">Tutor: Pranav Raval</span>
                     </button>
                   </h2>
@@ -117,13 +122,17 @@
                           </li>
                         </ul>
                         <div class="d-grid gap-2 col- mx-auto">
-                          <button type="button" class="btn btn-primary ml-2 enrollBtn">Enroll</button>
+                          <button type="button" class="btn btn-primary  ml-2 enrollBtn" data-bs-toggle="modal" data-bs-target="#enrollForm">
+                            Enroll
+                          </button>                          
                         </div>
                       </div>
                       <div class="tab-content">
                         <div class="tab-pane fade show active" id="about_uxui_tab" role="tabpanel" aria-labelledby="about_uxui" tabindex="0">
                           <div class="p-3">
-                            <p>HTML5 is the latest standard in web page coding. HTML5 &amp; CSS - Web development technology taught by professionals having over 10+ years of IT Industry experience. With our HTML &amp; CSS Training you will learn concepts of creating websites from beginner to expert level with practical manner and with live projects.This course teaches you all the basics of HTML &amp; CSS. Whether you are a student/fresher/experience programmer, if you are interested in learning Frontend technologies then you need to know the basic foundation in architecture. After the completion of this course you would be able to create your own portfolio website, webpages from scratch using HTML5 &amp; CSS.</p>
+                            <p>This is your path to a career in UX design. In this course, you’ll learn in-demand skills that will help you understand key skills about User Experience design. No degree or experience required.</p>
+                            <p>The main focus of this course is to give you industry experience. What it looks like when you work in the corporate world being a UX Designer.</p>
+                            <p>Learn UX foundations and gain experience with the design process, including how to build wireframes and prototypes and conduct user research to test your designs.</p>
                           </div>
                           <div class="p-3">
                             <h4>Course Structure</h4>
@@ -131,7 +140,8 @@
                               <tbody>
                                 <tr>
                                   <td>Total Duration</td>
-                                  <td>30 hours</td>
+                                  <td>140 hours<br />
+                                    3 hours per day (Note: Considering 2 days a week it takes approx 5 months to complete the course.)</td>
                                 </tr>
                                 <tr>
                                   <td>Fees</td>
@@ -143,12 +153,12 @@
                               <h5>Benefits</h5>
                               <ul class="benefitsList">
                                 <li>Online live interactive learning sessions with Q/A</li>
-                                <li>Hands on experience with solving some code challenges</li>
-                                <li>After completing this course, you would be able to create static websites</li>
+                                <li>Hands on experience with solving some UX/UI challenges</li>
+                                <li>After completing this course, you would be able to design websites / applications. </li>
                                 <li>Training sessions will be recorded and shared to have access it for 24x7.</li>
                                 <li>Experience working in professional team environment</li>
                                 <li>Chance to work on live project</li>
-                                <li>Code review and Assesments</li>
+                                <li>Design review and Assesments</li>
                                 <li>Guest lectures with domain experts and IT Industry professionals</li>
                                 <li>Interview level preparations</li>
                                 <li>Pair Programming</li>
@@ -160,28 +170,81 @@
                         <div class="tab-pane fade" id="syllabus_uxui_tab" role="tabpanel" aria-labelledby="syllabus_uxui" tabindex="0">
                           <div class="p-3">
                             <div class="col-md-12">
-                              <ul>
-                                <li>Introduction to HTML and CSS</li>
-                                <li>HTML5 elements, attributes, tagNames, Symmentic elements</li>
-                                <li>Adding styles to HTML Elements using inline, internal and external stylesheets</li>
-                                <li>Usage of basic HTML elements like links, images, table, list, headings, paragraphs and many more</li>
-                                <li>Introduction to HTML forms and elements</li>
-                                <li>Styling and Advance usage of form elements</li>
-                                <li>Creating one single page using HTML basic elements and form elements</li>
-                                <li>HTML Graphic elements usage like Canvas, SVG</li>
-                                <li>Learning of HTML Media Elements</li>
-                                <li>HTML APIs</li>
-                                <li>Practical Implementation of HTML5 APIs using Web Storage, Geolocation, Drag and Drop</li>
-                                <li>Introduction to Media queries</li>
-                                <li>Learning of creating websites into responsive using mobile first approach</li>
-                                <li>Testing your Webpage for validations and using w3c standards</li>
-                                <li>Practial to create webpage using HTML and CSS with responsive version</li>
-                                <li>Introduction to CSS pre processors</li>
-                                <li>Introduction to Bootstrap web framework</li>
-                                <li>HTML and CSS Interview preparations</li>
-                                <li>Pair Programming on 3 coding challenges</li>
-                                <li>Working experience on 1 live project</li>
-                              </ul>  
+                              
+                              <ol>
+                                <li><h5>Introduction to UX and UI</h5>
+                                  <ul>
+                                    <li>Definition and differences between UX and UI</li>
+                                    <li>Why they matter in product design</li>
+                                    <li>Overview of the design process</li>
+                                  </ul>
+                                </li>
+
+                                <li><h5>User Research</h5>
+                                  <ul>
+                                    <li>Understanding user needs and behavior</li>
+                                    <li>Conducting user interviews and surveys</li>
+                                    <li>Creating user personas</li>
+                                  </ul>
+                                </li>
+
+                                <li><h5>Information Architecture and Navigation:</h5>
+                                  <ul>
+                                    <li>Developing site maps and wireframes</li>
+                                    <li>Creating effective navigation and labeling systems</li>
+                                    <li>Understanding hierarchy and organization</li>
+                                  </ul>
+                                </li>
+
+                                <li><h5>Interaction Design:</h5>
+                                  <ul>
+                                  <li>Designing user flows interfaces</li>
+                                  <li>Designing forms and data input</li>
+                                  <li>Understanding gestures and interactions</li>
+                                  </ul>
+                                </li>
+
+                                <li><h5>Visual Design:</h5>
+                                  <ul>
+                                    <li>Basic design principles such as color theory and typography</li>
+                                    <li>Creating layouts and visual hierarchy</li>
+                                    <li>Creating icons and graphics</li>
+                                  </ul>
+                                </li>
+
+                                <li><h5>Usability Testing:</h5>
+                                  <ul>
+                                  <li>Planning and conducting usability tests</li>
+                                  <li>Analyzing and interpreting results</li>
+                                  <li>Iterating on designs</li>
+                                  </ul>
+                                </li>
+
+                                <li><h5>Design Tools and Techniques:</h5>
+                                  <ul>
+                                    <li>Introduction to popular design tools such as Sketch, Figma, or Adobe XD</li>
+                                    <li>Creating high-fidelity prototypes</li>
+                                    <li>Using design frameworks and templates</li>
+                                  </ul>
+                                </li>
+
+                                <li><h5>Mobile and Responsive Design:</h5>
+                                  <ul>
+                                  <li>Designing for mobile devices</li>
+                                  <li>Understanding responsive design</li>
+                                  <li>Creating mobile-first designs</li>
+                                  </ul>
+                                </li>
+
+                                <li><h5>Career Opportunities in UX and UI:</h5>
+                                  <ul>
+                                    <li>Overview of different roles in UX and UI</li>
+                                    <li>Skills and qualifications required for UX and UI roles</li>
+                                    <li>Building a career in UX and UI</li>
+                                  </ul>
+                                </li>
+
+                              </ol>  
                             </div>
                           </div>
                           
@@ -196,7 +259,12 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="design_tools_heading">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#design_accordion" aria-expanded="false" aria-controls="design_accordion">
-                      <span class="courseTitle">Design Tools</span>
+                      <span class="courseTitle">
+                        <span class="courseLogo">
+                          <img src="./images/course-logos/sketch_logo.svg" alt="Design Tools" />
+                        </span>
+                        Design Tools
+                      </span>
                       <span class="text-right instrctorName">Tutor: Pranav Raval</span>
                     </button>
                   </h2>
@@ -212,7 +280,9 @@
                           </li>
                         </ul>
                         <div class="d-grid gap-2 col- mx-auto">
-                          <button type="button" class="btn btn-primary ml-2 enrollBtn">Enroll</button>
+                          <button type="button" class="btn btn-primary  ml-2 enrollBtn" data-bs-toggle="modal" data-bs-target="#enrollForm">
+                            Enroll
+                          </button> 
                         </div>
                       </div>
                       <div class="tab-content">
@@ -292,7 +362,12 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="html_css_heading">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#html_css_accordion" aria-expanded="false" aria-controls="html_css_accordion">
-                      <span class="courseTitle">HTML and CSS</span>
+                      <span class="courseTitle">
+                        <span class="courseLogo">
+                          <img src="./images/course-logos/html5_logo.svg" alt="HTML5 and CSS3" />
+                        </span>
+                        HTML and CSS
+                      </span>
                       <span class="text-right instrctorName">Tutor: Mitali Saboo</span>
                     </button>
                   </h2>
@@ -308,7 +383,9 @@
                             </li>
                           </ul>
                           <div class="d-grid gap-2 col- mx-auto">
-                            <button type="button" class="btn btn-primary ml-2 enrollBtn">Enroll</button>
+                            <button type="button" class="btn btn-primary  ml-2 enrollBtn" data-bs-toggle="modal" data-bs-target="#enrollForm">
+                              Enroll
+                            </button> 
                           </div>
                         </div>
                         <div class="tab-content">
@@ -393,7 +470,12 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="javascript_heading">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#javascript_accordion" aria-expanded="false" aria-controls="javascript_accordion">
-                      <span class="courseTitle">Javascript</span>
+                      <span class="courseTitle">
+                        <span class="courseLogo">
+                          <img src="./images/course-logos/js_logo.svg" alt="Javascript" />
+                        </span>
+                        Javascript
+                      </span>
                       <span class="text-right instrctorName">Tutor: Mitali Saboo</span>
                     </button>
                   </h2>
@@ -409,7 +491,9 @@
                           </li>
                         </ul>
                         <div class="d-grid gap-2 col- mx-auto">
-                          <button type="button" class="btn btn-primary ml-2 enrollBtn">Enroll</button>
+                          <button type="button" class="btn btn-primary  ml-2 enrollBtn" data-bs-toggle="modal" data-bs-target="#enrollForm">
+                            Enroll
+                          </button> 
                         </div>
                       </div>
                       <div class="tab-content">
@@ -496,7 +580,12 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="react_heading">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#react_accordion" aria-expanded="false" aria-controls="react_accordion">
-                      <span class="courseTitle">React</span>
+                      <span class="courseTitle">
+                        <span class="courseLogo">
+                          <img src="./images/course-logos/react_logo.svg" alt="React" />
+                        </span>
+                        React
+                      </span>
                       <span class="text-right instrctorName">Tutor: Mitali Saboo</span>
 
                     </button>
@@ -513,7 +602,9 @@
                           </li>
                         </ul>
                         <div class="d-grid gap-2 col- mx-auto">
-                          <button type="button" class="btn btn-primary ml-2 enrollBtn">Enroll</button>
+                          <button type="button" class="btn btn-primary  ml-2 enrollBtn" data-bs-toggle="modal" data-bs-target="#enrollForm">
+                            Enroll
+                          </button> 
                         </div>
                       </div>
                       <div class="tab-content">
@@ -596,7 +687,12 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="reactNative_heading">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#react_native_accordion" aria-expanded="false" aria-controls="react_native_accordion">
-                      <span class="courseTitle">React Native</span>
+                      <span class="courseTitle">
+                        <span class="courseLogo">
+                          <img src="./images/course-logos/react_logo.svg" alt="React Native" />
+                        </span>
+                        React Native
+                      </span>
                       <span class="text-right instrctorName">Tutor: Mitali Saboo</span>
                     </button>
                   </h2>
@@ -612,7 +708,9 @@
                           </li>
                         </ul>
                         <div class="d-grid gap-2 col- mx-auto">
-                          <button type="button" class="btn btn-primary ml-2 enrollBtn">Enroll</button>
+                          <button type="button" class="btn btn-primary  ml-2 enrollBtn" data-bs-toggle="modal" data-bs-target="#enrollForm">
+                            Enroll
+                          </button> 
                         </div>
                       </div>
                       <div class="tab-content">
@@ -694,7 +792,12 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="angular_heading">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#angular_accordion" aria-expanded="false" aria-controls="angular_accordion">
-                      <span class="courseTitle">Angular</span>
+                      <span class="courseTitle">
+                        <span class="courseLogo">
+                          <img src="./images/course-logos/angular_logo.svg" alt="Angular JS" />
+                        </span>
+                        Angular
+                      </span>
                       <span class="text-right instrctorName">Tutor: Mitali Saboo</span>
                     </button>
                   </h2>
@@ -710,7 +813,9 @@
                           </li>
                         </ul>
                         <div class="d-grid gap-2 col- mx-auto">
-                          <button type="button" class="btn btn-primary ml-2 enrollBtn">Enroll</button>
+                          <button type="button" class="btn btn-primary  ml-2 enrollBtn" data-bs-toggle="modal" data-bs-target="#enrollForm">
+                            Enroll
+                          </button> 
                         </div>
                       </div>
                       <div class="tab-content">
@@ -792,7 +897,12 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="vue_heading">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vue_accordion" aria-expanded="false" aria-controls="vue_accordion">
-                      <span class="courseTitle">Vue</span>
+                      <span class="courseTitle">
+                        <span class="courseLogo">
+                          <img src="./images/course-logos/vue_logo.svg" alt="Vue JS" />
+                        </span>
+                        Vue
+                      </span>
                       <span class="text-right instrctorName">Tutor: Mitali Saboo</span>
                     </button>
                   </h2>
@@ -808,7 +918,9 @@
                           </li>
                         </ul>
                         <div class="d-grid gap-2 col- mx-auto">
-                          <button type="button" class="btn btn-primary ml-2 enrollBtn">Enroll</button>
+                          <button type="button" class="btn btn-primary  ml-2 enrollBtn" data-bs-toggle="modal" data-bs-target="#enrollForm">
+                            Enroll
+                          </button> 
                         </div>
                       </div>
                       <div class="tab-content">
@@ -916,6 +1028,79 @@
       </footer>
 
     </div>
+
+    <!-- enroll form in modal box-->
+    <div class="modal" tabindex="-1" role="dialog" id="enrollForm">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Enrollment Form</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="./enroll.php" method="post">
+
+              <div class="form-group row">
+                <h4>Course Selection</h4>
+                <div class="col-md-12 mb-4">
+                  <select class="form-select" aria-label="Default select example" name="courseSelected">
+                    <option selected>Select Course</option>
+                    <option value="UX/UI Foundation">UX/UI Foundation</option>
+                    <option value="Design Tools">Design Tools</option>
+                    <option value="HTML5 / CSS3">HTML5 / CSS3</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="React">React</option>
+                    <option value="React Native">React Native</option>
+                    <option value="Angular">Angular</option>
+                    <option value="Vue">Vue</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="form-control" placeholder="Full Name" name="enrollName">
+                </div>
+                <div class="col-md-6  mb-4">
+                  <input type="text" class="form-control" placeholder="Contact Number" name="enrollNum">
+                </div>
+                <div class="col-md-12 mb-4">
+                  <input type="email" class="form-control" placeholder="Email" name="enrollEmail">
+                </div>
+
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12 mb-4">
+                  <h5>What is your current occupation? </h5>
+                  <input type="text" class="form-control" placeholder="student" name="enrollOccupation">
+                </div>
+                <div class="row mb-4">
+                  <div class="col-md-9">
+                    <h5>Would you like to be added to our email list to receive updates about future courses and promotions?</h5>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group" name="enrollPromotionInterest">
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                      <label class="btn btn-outline-primary" for="btnradio1">Yes</label>
+                    
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                      <label class="btn btn-outline-primary" for="btnradio2">No</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <h5>Payment Information: No payment required as first two sessions are free.</h5>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <input type="submit" class="btn btn-primary text-white" name="submit" value="Submit">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- enroll form in modal box ends here -->
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

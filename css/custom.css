@@ -433,7 +433,7 @@ height: auto}
   border-color: #CB1043;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-check:focus+.btn-primary, .btn-primary:focus {
   background: #ad0e39;
 }
 .site-logo img {
@@ -479,7 +479,7 @@ header.navbar-fixed-top{
   margin-bottom: 15px;
 }
 .llcAccordionPanel  .accordion-button{
-  padding: 28px 24px;
+  padding: 24px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 1px 2px 0 rgba(0, 0, 0, 0.14);
   background-color: #fff;
   font-size: 24px;
@@ -637,6 +637,19 @@ header.navbar-fixed-top{
   max-width: 100%;
   height: auto;
 }
+.connectInfoDetails li a {
+  text-decoration: none;
+  color: #CB1043;
+  font-weight: normal;
+}
+.connectInfoDetails li a:hover {
+  text-decoration: underline;
+  color: #CB1043;
+  font-weight: 600;
+}
+.courseLogo {
+  margin-right: 10px;
+}
 @media only screen and (max-width: 767px) {
   .mobileMenuLogo {
     display: inline-flex;
@@ -669,8 +682,13 @@ header.navbar-fixed-top{
   .footerLinks {
     margin-top: 15px;
   }
+  .llc-small-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
   h1.blockTitle, .small-blockTitle {
     font-size: 30px;
+    line-height: 34px;
   }
   .courseStructureTable {
     width: 100%;
@@ -697,6 +715,17 @@ header.navbar-fixed-top{
   }
   .courseDetailTabs li {
     font-size: 16px;
+  }
+  .courseLogo {
+    width: 25px;
+    display: inline-block;
+    margin-right: 0;
+  }
+  .courseLogo img {
+    max-width: 100%;
+  }
+  .llcWrapperImage {
+    background: none;
   }
 }
 
