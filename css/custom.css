@@ -633,7 +633,10 @@ header.navbar-fixed-top{
 .fullWidthDiv {
   width: 100%;
 }
-
+.aboutImage img {
+  max-width: 100%;
+  height: auto;
+}
 @media only screen and (max-width: 767px) {
   .mobileMenuLogo {
     display: inline-flex;

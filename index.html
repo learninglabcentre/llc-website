@@ -104,10 +104,19 @@
           <div class="heading mb-4">
             <h1 class="blockTitle">About us</h1>
           </div>
-          <p>Our site is dedicated to providing high-quality, easy-to-follow tutorials on a variety of topics. Whether you are a beginner or an expert, our course structure is designed to help you improve your skills and knowledge in your chosen area. We cover a wide range of subjects, from programming and web development to graphic design, business sale, recruitment and more. Our tutorials are written by industry experts and designed to be accessible and engaging for learners of all levels.</p>
-          <p>At Learning Lab Centre, we believe that learning should be fun and rewarding. That's why our tutors wil teach with full of examples, hands-on exercises, practical tips and most importantly it is live video tutorial so that you can engage with your mentor.</p>
-          <p>Our mission is to help you achieve your learning goals, whether that means landing your dream job, starting your own business, or simply pursuing a new hobby. Live video tutorial gives you chance to intreact with your mentor and clear all your doubts.</p>
-          <p>Thank you for choosing Learning Lab Centre as your online learning partner. We're excited to help you unlock your full potential!</p>
+          <div class="row">
+            <div class="col-lg-8 col-sm-12">
+              <p>Our site is dedicated to providing high-quality, easy-to-follow tutorials on a variety of topics. Whether you are a beginner or an expert, our course structure is designed to help you improve your skills and knowledge in your chosen area. We cover a wide range of subjects, from programming and web development to graphic design, business sale, recruitment and more. Our tutorials are written by industry experts and designed to be accessible and engaging for learners of all levels.</p>
+              <p>At Learning Lab Centre, we believe that learning should be fun and rewarding. That's why our tutors wil teach with full of examples, hands-on exercises, practical tips and most importantly it is live video tutorial so that you can engage with your mentor.</p>
+              <p>Our mission is to help you achieve your learning goals, whether that means landing your dream job, starting your own business, or simply pursuing a new hobby. Live video tutorial gives you chance to intreact with your mentor and clear all your doubts.</p>
+              <p>Thank you for choosing Learning Lab Centre as your online learning partner. We're excited to help you unlock your full potential!</p>
+            </div>
+            <div class="d-none d-md-block col-sm-4">
+              <div class="aboutImage">
+                <img src="./images/about-img.svg" alt="Learning Lab Center About Image" />
+              </div>
+            </div>
+          </div>
           <div class="row mb-5">
             <div class="col-md-6">
               <div class="heading mb-4">
@@ -338,6 +347,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
     <script>
+      (function() {
+      var s = document.createElement('script');s.type='text/javascript';s.async=true;s.id='lsInitScript';
+      s.src='https://livesupporti.com/Scripts/clientAsync.js?acc=078cca93-ce20-43e3-934e-59c42540ac48&skin=Modern';
+      var scr=document.getElementsByTagName('script')[0];scr.parentNode.appendChild(s, scr);
+      })();
+
       function openNav() {
 		document.getElementById("mySidenav").style.width = "250px";
 	  }
